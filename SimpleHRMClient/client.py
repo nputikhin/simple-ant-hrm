@@ -58,7 +58,6 @@ class SensorTCPClient:
 if __name__ == '__main__':
     client = SensorTCPClient();
     client.connectToServer(("169.254.211.109", 4004))
-    shutdown = False
 
     monitor = hrm.HRM(client)
     monitor.start()
